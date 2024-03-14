@@ -1,13 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #efeeee;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fbfbfb;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.cardProfile {
+  background: linear-gradient(60deg, rgba(253, 29, 29, 1) 50%, rgb(186, 4, 125) 100%);
+}
+
+.shadow-carousel {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
